@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Days Alive Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>How many days have you lived?</h2>
+        <form method="post" action="/">
+            <div class="form-group">
+                <label for="birthday">Enter your birthday with format (MM/DD/YYYY):<br></label>
+                <input type="text" class="form-control" id="birthday" name="birthday" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
